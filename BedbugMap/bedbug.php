@@ -1,6 +1,6 @@
 <?php
-    $conn = mysqli_connect( 'localhost', 'root', 'root', 'bedbug_db' );
-    $sql = "SELECT * FROM bedbug_table LIMIT 6;";
+    $conn = mysqli_connect( 'svc.sel4.cloudtype.app', 'root', 'root', 'testdb' );
+    $sql = "SELECT * FROM bedbug_table LIMIT 5;";
     $result = mysqli_query( $conn, $sql );
     
     while( $row = mysqli_fetch_array( $result ) ) {
